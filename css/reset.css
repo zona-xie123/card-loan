@@ -1,0 +1,240 @@
+@charset "utf-8";
+/*//////////font//////////*/
+/*//////////dimension//////////*/
+/*//////////color//////////*/
+/*//////////extend 模組//////////*/
+/* line 27, ../theme/tw/sass/_setting.scss */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 28, ../theme/tw/sass/_setting.scss */
+.ellipsis_p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  /*-webkit-line-clamp: 2;*/
+}
+
+/* line 31, ../theme/tw/sass/_setting.scss */
+.noellipsis {
+  text-overflow: clip;
+  white-space: normal;
+}
+
+/* line 32, ../theme/tw/sass/_setting.scss */
+.shadow {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* line 33, ../theme/tw/sass/_setting.scss */
+.inshadow {
+  -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 34, ../theme/tw/sass/_setting.scss */
+.tshadow {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* line 35, ../theme/tw/sass/_setting.scss */
+.piecss3 {
+  behavior: url("plugin/pie/PIE.php");
+}
+
+/* line 36, ../theme/tw/sass/_setting.scss */
+.noshadow {
+  -webkit-box-shadow: 0 0 0 0;
+  -moz-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+
+/* line 37, ../theme/tw/sass/_setting.scss */
+.bgcover {
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/* line 38, ../theme/tw/sass/_setting.scss */
+.piecss3 {
+  position: relative;
+  z-index: 2;
+  behavior: url("js/pie/PIE.php");
+}
+
+/* line 3, ../theme/tw/sass/reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 4, ../theme/tw/sass/reset.scss */
+html, body, div, span, img, dl, dt, dd, ol, ul, li, table, tr, th, td, form, input {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+/* line 5, ../theme/tw/sass/reset.scss */
+body {
+  font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 6, ../theme/tw/sass/reset.scss */
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../theme/tw/sass/reset.scss */
+ul li {
+  list-style: none;
+}
+
+/* line 8, ../theme/tw/sass/reset.scss */
+table {
+  font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 9, ../theme/tw/sass/reset.scss */
+th {
+  font-weight: normal;
+}
+
+/* line 10, ../theme/tw/sass/reset.scss */
+img {
+  border-width: 0;
+}
+
+/* line 11, ../theme/tw/sass/reset.scss */
+a, img {
+  text-decoration: none;
+  outline: none;
+  behavior: expression(this.onFocus=this.blur());
+}
+
+/* line 12, ../theme/tw/sass/reset.scss */
+a:hover, img:hover {
+  color: #666666;
+  text-decoration: none;
+}
+
+/* line 13, ../theme/tw/sass/reset.scss */
+a, a:hover {
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  -ms-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+/* line 14, ../theme/tw/sass/reset.scss */
+button, input, textarea, select {
+  font-family: 'Noto Sans TC', "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 15, ../theme/tw/sass/reset.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+/* line 16, ../theme/tw/sass/reset.scss */
+table button, table input {
+  *overflow: auto;
+}
+
+/* line 17, ../theme/tw/sass/reset.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 18, ../theme/tw/sass/reset.scss */
+textarea {
+  resize: vertical;
+}
+
+/* 一致的方塊大小和外觀 */
+/* line 21, ../theme/tw/sass/reset.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+
+/* line 22, ../theme/tw/sass/reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 23, ../theme/tw/sass/reset.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* 表單有效性的色彩 */
+/* line 26, ../theme/tw/sass/reset.scss */
+input:invalid, textarea:invalid {
+  background-color: #eff0dd;
+}
+
+/* line 28, ../theme/tw/sass/reset.scss */
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* line 29, ../theme/tw/sass/reset.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 30, ../theme/tw/sass/reset.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 31, ../theme/tw/sass/reset.scss */
+.clearfix {
+  display: block;
+}
